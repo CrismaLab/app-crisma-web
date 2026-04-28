@@ -1,0 +1,23 @@
+.buttonVazado {
+  background-color: #fff;
+  border: 1px solid #3A426D;
+  padding: 14px 0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+  margin-bottom: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.buttonVazado:hover {
+  background-color: #f0f0f0;
+}
+
+.buttonVazadoText {
+  color: #3A426D;
+  font-size: 16px;
+  font-weight: 600;
+}
