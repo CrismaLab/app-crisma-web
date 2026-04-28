@@ -1,0 +1,30 @@
+.container {
+  width: 100%;
+  position: relative;
+}
+
+.input {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: #333;
+  box-sizing: border-box;
+}
+
+.inputWithIcon {
+  padding-right: 44px;
+}
+
+.iconButton {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #667085;
+  font-size: 22px;
+}
