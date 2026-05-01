@@ -3,20 +3,22 @@ import Image from 'next/image';
 import styles from './AppLogo.module.css';
 
 interface AppLogoProps {
-  title?: string;
+  width?: number;
+  height?: number;
+  className?: string;
 }
 
-export default function AppLogo({ title = "crisma.app" }: AppLogoProps) {
+export default function AppLogo({ width = 160, height = 60, className }: AppLogoProps) {
   return (
-    <div className={styles.logoContainer}>
+    <div className={`${styles.logoContainer} ${className || ''}`}>
       <Image
-        src="/assets/images/icon.png"
-        alt="App Logo"
-        width={150}
-        height={120}
-        className={styles.reactLogo}
+        src="/images/logo_crisma.png"
+        alt="Crisma App Logo"
+        width={width}
+        height={height}
+        className={styles.brandLogo}
+        priority
       />
-      <h2 className={styles.appName}>{title}</h2>
     </div>
   );
 }

@@ -1,0 +1,25 @@
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile */
+  gap: 20px; /* Increased gap to space out buttons */
+  margin-top: var(--cr-spacing-xs);
+  margin-bottom: var(--cr-spacing-xs);
+  width: 100%;
+  max-width: 400px; /* Decouple grid width from overall container width */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Tablets and up */
+@media (min-width: 600px) {
+  .gridContainer {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on tablet */
+  }
+}
+
+/* Desktops and up */
+@media (min-width: 900px) {
+  .gridContainer {
+    grid-template-columns: repeat(4, 1fr); /* 4 columns on desktop */
+  }
+}

@@ -1,6 +1,6 @@
 .description {
-  font-size: 14px;
+  font-size: var(--cr-font-size-body);
   text-align: center;
-  color: #666;
-  margin: 20px 0;
+  color: var(--cr-color-medium-grey);
+  margin: var(--cr-spacing-md) 0;
 }

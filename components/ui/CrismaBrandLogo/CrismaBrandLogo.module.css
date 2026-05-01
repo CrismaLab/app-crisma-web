@@ -1,0 +1,11 @@
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: var(--cr-spacing-md);
+  padding-top: var(--cr-spacing-lg);
+}
+
+.crismaLogo {
+  /* No specific styles needed here unless you want to override default image styles */
+}

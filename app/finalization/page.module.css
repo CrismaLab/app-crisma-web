@@ -1,0 +1,39 @@
+.pageContainer {
+  background-color: var(--cr-color-white);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden; /* Prevent scrolling as requested */
+}
+
+.mainContent {
+  width: 100%;
+  max-width: 430px; /* Approx mobile width as requested */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  padding-top: 6vh; /* Reduced from 10vh to prevent scrolling */
+}
+
+.logoWrapper {
+  margin-bottom: 32px; /* Reduced from 48px */
+}
+
+.titleWrapper {
+  margin-bottom: 40px; /* Reduced from 64px */
+}
+
+.illustrationWrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0 var(--cr-spacing-xl);
+}
+
+.footerSection {
+  margin-top: 64px; /* Positioned in the middle/below illustration instead of bottom */
+  width: 100%;
+  padding: 24px; /* Standardized horizontal and vertical padding */
+}

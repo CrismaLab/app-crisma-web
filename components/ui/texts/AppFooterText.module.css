@@ -1,0 +1,6 @@
+.footerText {
+  font-size: var(--cr-font-size-small);
+  color: var(--cr-color-light-grey);
+  text-align: center;
+  margin-top: var(--cr-spacing-xl); /* Add significant space above footer text */
+}

@@ -1,0 +1,45 @@
+.pageContainer {
+  background-color: var(--cr-color-white);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 16px; /* Reduced lateral padding to stretch buttons */
+  align-items: center;
+}
+
+.mainContent {
+  width: 100%;
+  max-width: 28rem; /* max-w-md */
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* allow it to push footer down */
+}
+
+.headerSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 16px; /* Reduced from 24px */
+}
+
+.logoWrapper {
+  margin-bottom: 1px; /* Greatly reduced to bring logo closer to title */
+}
+
+.footerSection {
+  margin-top: auto; /* push to bottom */
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Increased gap to space buttons more */
+  width: 100%;
+  padding-top: 16px; /* compressed padding */
+}
+
+@media (min-width: 768px) {
+  .footerSection {
+    flex-direction: row;
+  }
+  .footerSection > * {
+    flex: 1;
+  }
+}

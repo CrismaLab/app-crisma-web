@@ -1,23 +1,22 @@
 .buttonVazado {
-  background-color: #fff;
-  border: 1px solid #3A426D;
-  padding: 14px 0;
-  border-radius: 8px;
+  background-color: transparent;
+  border: 1px solid var(--cr-color-button-border);
+  height: 56px;
+  width: 100%;
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 8px;
-  margin-bottom: 14px;
   cursor: pointer;
-  transition: background-color 0.2s;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .buttonVazado:hover {
-  background-color: #f0f0f0;
+  background-color: rgba(44, 53, 80, 0.05); /* Very subtle dark blue tint on hover */
 }
 
 .buttonVazadoText {
-  color: #3A426D;
-  font-size: 16px;
-  font-weight: 600;
+  color: var(--cr-color-button-border);
+  font-size: var(--cr-font-size-body);
+  font-weight: var(--cr-font-weight-semibold);
 }

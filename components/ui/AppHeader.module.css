@@ -1,13 +1,34 @@
 .header {
   height: 60px;
-  background-color: #fff;
+  background-color: var(--cr-color-dark-text); /* Dark top bar */
   display: flex;
-  justify-content: center;
+  justify-content: space-between; /* Space out items */
   align-items: center;
+  padding: 0 var(--cr-spacing-md); /* Add horizontal padding */
 }
 
 .title {
-  font-size: 20px;
-  font-weight: bold;
-  color: #3A426D;
+  font-size: var(--cr-font-size-subtitle); /* Use subtitle size for header title */
+  font-weight: var(--cr-font-weight-bold);
+  color: var(--cr-color-white); /* White title text */
+  flex-grow: 1; /* Allow title to take available space */
+  text-align: center; /* Center the title */
+  margin-left: -48px; /* Offset for button on left */
+}
+
+.iconButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex; /* Ensure image is centered in button */
+  align-items: center;
+  justify-content: center;
+  width: 48px; /* Fixed width for clickable area */
+  height: 48px; /* Fixed height for clickable area */
+  color: var(--cr-color-white); /* Icon color */
+}
+
+.iconButton > img {
+  filter: brightness(0) invert(1); /* Make SVG white */
 }

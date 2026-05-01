@@ -1,6 +1,7 @@
 .subtitle {
-  font-size: 14px;
-  color: #666;
-  margin-bottom: 16px;
+  font-size: var(--cr-font-size-subtitle);
+  color: var(--cr-color-subtitle-text); /* Use the new grey-blue color */
+  font-weight: var(--cr-font-weight-medium); /* Medium weight */
+  margin-bottom: var(--cr-spacing-sm); /* 0.5rem gap as requested */
   text-align: center;
 }

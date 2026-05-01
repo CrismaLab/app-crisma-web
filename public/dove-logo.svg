@@ -1,0 +1,9 @@
+<svg width="80" height="80" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Dove Body and Head -->
+    <path d="M20 50 C20 30 40 20 50 20 C60 20 80 30 80 50 C80 70 60 80 50 80 C40 80 20 70 20 50 Z" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Wings -->
+    <path d="M50 20 L30 10 M50 20 L70 10" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M50 80 L30 90 M50 80 L70 90" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Cross on Chest -->
+    <path d="M45 45 L55 45 M50 40 L50 60" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

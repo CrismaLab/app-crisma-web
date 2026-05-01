@@ -1,0 +1,7 @@
+.instruction {
+  font-size: var(--cr-font-size-instruction);
+  color: var(--cr-color-medium-grey);
+  font-weight: var(--cr-font-weight-regular); /* Regular font weight */
+  text-align: center;
+  margin-bottom: var(--cr-spacing-sm); /* Reduced margin to compress space */
+}

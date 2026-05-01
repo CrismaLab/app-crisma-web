@@ -1,4 +1,32 @@
-* {
+:root {
+  --cr-color-white: #FFFFFF;
+  --cr-color-dark-text: #2C3550; /* Dark marine blue/anthracite for titles */
+  --cr-color-subtitle-text: #475569; /* Grey-blue for subtitle */
+  --cr-color-medium-grey: #71717a; /* Medium grey for instructions */
+  --cr-color-light-grey: #a0a7b5; /* Light grey for footer text */
+  --cr-color-button-confirm: #2C3550; /* Dark marine blue for active primary button */
+  --cr-color-button-disabled: #A8A8A8; /* Solid medium grey for disabled button */
+  --cr-color-button-border: #2C3550; /* Dark border for back button matching title */
+
+  --cr-font-family-sans-serif: var(--font-inter), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --cr-font-weight-bold: 700;
+  --cr-font-weight-semibold: 600;
+  --cr-font-weight-medium: 500;
+  --cr-font-weight-regular: 400;
+  --cr-font-size-title: 1.5rem; /* ~24px */
+  --cr-font-size-subtitle: 1.125rem; /* ~18px */
+  --cr-font-size-instruction: 1rem; /* ~16px */
+  --cr-font-size-body: 1rem;
+  --cr-font-size-small: 0.875rem; /* For footer text */
+
+  --cr-spacing-xs: 0.25rem; /* 4px */
+  --cr-spacing-sm: 0.5rem; /* 8px */
+  --cr-spacing-md: 1rem; /* 16px */
+  --cr-spacing-lg: 1.5rem; /* 24px */
+  --cr-spacing-xl: 2rem; /* 32px */
+  --cr-border-radius-md: 12px; /* For action buttons and class buttons */
+
+  /* Universal reset, moved into :root for consistency with other variables */
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -18,6 +46,7 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  font-family: var(--cr-font-family-sans-serif); /* Apply global font family */
 }
 
 a {
