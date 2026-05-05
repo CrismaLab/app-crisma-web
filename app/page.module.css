@@ -1,0 +1,7 @@
+.pageShell {
+  min-height: 100vh;
+  background-color: var(--cr-color-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
