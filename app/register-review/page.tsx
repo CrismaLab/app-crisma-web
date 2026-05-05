@@ -8,11 +8,27 @@ import { RegistrationFormData, SelectedClass } from '@/types/registration';
 import styles from './page.module.css';
 
 interface RegisterReviewPageProps {
-  data: RegistrationFormData;
-  selectedClass: SelectedClass;
-  onConfirm: () => void;
-  onBack: () => void;
+  data?: RegistrationFormData;
+  selectedClass?: SelectedClass;
+  onConfirm?: () => void;
+  onBack?: () => void;
 }
+
+const EMPTY_REGISTRATION_DATA: RegistrationFormData = {
+  fullName: '',
+  birthDate: '',
+  phone: '',
+  email: '',
+  password: '',
+  confirmPassword: '',
+  registrationType: '',
+};
+
+const EMPTY_SELECTED_CLASS: SelectedClass = {
+  id: '',
+  name: 'Turma',
+  color: '#82AF7F',
+};
 
 export default function RegisterReviewPage({
   data,
@@ -21,8 +37,9 @@ export default function RegisterReviewPage({
   onBack,
 }: RegisterReviewPageProps) {
   const methods = useForm<RegistrationFormData>({
-    defaultValues: data,
+    defaultValues: data ?? EMPTY_REGISTRATION_DATA,
   });
+  const classToReview = selectedClass ?? EMPTY_SELECTED_CLASS;
 
   return (
     <main className={styles.pageContainer}>
@@ -32,8 +49,8 @@ export default function RegisterReviewPage({
           <h1 id="review-title" className={styles.brand}>crisma.app</h1>
           <p className={styles.title}>Primeiro acesso</p>
           <p className={styles.subtitle}>Confirme seus dados</p>
-          <span className={styles.classBadge} style={{ backgroundColor: selectedClass.color }}>
-            {selectedClass.name}
+          <span className={styles.classBadge} style={{ backgroundColor: classToReview.color }}>
+            {classToReview.name}
           </span>
         </header>
 
