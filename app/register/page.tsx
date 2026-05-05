@@ -72,7 +72,7 @@ export default function RegisterPage({ defaultValues, onSubmit }: RegisterPagePr
                   validate: (value) => value === password || 'As senhas precisam ser iguais',
                 }}
               />
-              <input type="hidden" {...methods.register('registrationType', { required: true })} />
+              <input type="hidden" {...methods.register('registrationType')} />
             </div>
 
             <AppButton type="submit">Continuar</AppButton>
