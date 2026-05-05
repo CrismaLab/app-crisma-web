@@ -8,10 +8,11 @@ import AppInstructionText from '@/components/ui/texts/AppInstructionText';
 import ClassGrid from '@/components/ClassGrid/ClassGrid';
 import AppButton from '@/components/ui/buttons/AppButton';
 import AppOutlinedButton from '@/components/ui/buttons/AppOutlinedButton';
+import { SelectedClass } from '@/types/registration';
 import styles from './page.module.css';
 
 interface ClassSelectionPageProps {
-  onConfirm: () => void;
+  onConfirm: (selectedClass: SelectedClass) => void;
   onBack?: () => void;
 }
 
@@ -39,9 +40,10 @@ export default function ClassSelectionPage({ onConfirm, onBack }: ClassSelection
   };
 
   const handleConfirmSelection = () => {
-    if (selectedClassId) {
-      console.log(`Class ${selectedClassId} confirmed!`);
-      onConfirm(); // Call the onConfirm prop
+    const selectedClass = classes.find((classItem) => classItem.id === selectedClassId);
+
+    if (selectedClass) {
+      onConfirm(selectedClass);
     } else {
       alert('Por favor, selecione uma turma.');
     }
