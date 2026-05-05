@@ -28,7 +28,7 @@ export default function RegisterReviewPage({
     <main className={styles.pageContainer}>
       <section className={styles.content} aria-labelledby="review-title">
         <header className={styles.header}>
-          <img src="/dove-logo.svg" alt="" className={styles.logo} />
+          <img src="/images/logo_crisma.png" alt="" className={styles.logo} />
           <h1 id="review-title" className={styles.brand}>crisma.app</h1>
           <p className={styles.title}>Primeiro acesso</p>
           <p className={styles.subtitle}>Confirme seus dados</p>

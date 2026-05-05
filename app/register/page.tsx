@@ -27,7 +27,7 @@ export default function RegisterPage({ defaultValues, onSubmit }: RegisterPagePr
     <main className={styles.pageContainer}>
       <section className={styles.content} aria-labelledby="register-title">
         <header className={styles.header}>
-          <img src="/dove-logo.svg" alt="" className={styles.logo} />
+          <img src="/images/logo_crisma.png" alt="" className={styles.logo} />
           <h1 id="register-title" className={styles.brand}>crisma.app</h1>
           <p className={styles.title}>Primeiro acesso</p>
           <p className={styles.subtitle}>Faça o seu cadastro</p>
