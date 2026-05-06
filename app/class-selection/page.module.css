@@ -35,6 +35,19 @@
   padding-top: 16px; /* compressed padding */
 }
 
+.feedback,
+.feedbackError {
+  color: var(--cr-color-medium-grey);
+  font-size: 1rem;
+  line-height: 1.4;
+  margin: 32px 0;
+  text-align: center;
+}
+
+.feedbackError {
+  color: #b42318;
+}
+
 @media (min-width: 768px) {
   .footerSection {
     flex-direction: row;

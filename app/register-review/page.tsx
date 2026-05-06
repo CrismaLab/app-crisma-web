@@ -14,6 +14,8 @@ interface RegisterReviewPageProps {
   selectedClass?: SelectedClass;
   onConfirm?: () => void;
   onBack?: () => void;
+  errorMessage?: string;
+  isSubmitting?: boolean;
 }
 
 const EMPTY_REGISTRATION_DATA: RegistrationFormData = {
@@ -24,6 +26,7 @@ const EMPTY_REGISTRATION_DATA: RegistrationFormData = {
   password: '',
   confirmPassword: '',
   registrationType: '',
+  roleId: '',
 };
 
 const EMPTY_SELECTED_CLASS: SelectedClass = {
@@ -37,6 +40,8 @@ export default function RegisterReviewPage({
   selectedClass,
   onConfirm,
   onBack,
+  errorMessage,
+  isSubmitting = false,
 }: RegisterReviewPageProps) {
   const [hasAcceptedTerms, setHasAcceptedTerms] = useState(false);
   const methods = useForm<RegistrationFormData>({
@@ -91,10 +96,12 @@ export default function RegisterReviewPage({
                 </span>
               </label>
 
-              <AppButton type="button" onClick={onConfirm} disabled={!hasAcceptedTerms}>
-                Confirmar
+              {errorMessage && <p className={styles.submitError}>{errorMessage}</p>}
+
+              <AppButton type="button" onClick={onConfirm} disabled={!hasAcceptedTerms || isSubmitting}>
+                {isSubmitting ? 'Enviando...' : 'Confirmar'}
               </AppButton>
-              <AppOutlinedButton type="button" onClick={onBack}>Voltar</AppOutlinedButton>
+              <AppOutlinedButton type="button" onClick={onBack} disabled={isSubmitting}>Voltar</AppOutlinedButton>
             </footer>
           </form>
         </FormProvider>

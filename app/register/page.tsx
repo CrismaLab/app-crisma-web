@@ -73,6 +73,7 @@ export default function RegisterPage({ defaultValues, onSubmit }: RegisterPagePr
                 }}
               />
               <input type="hidden" {...methods.register('registrationType')} />
+              <input type="hidden" {...methods.register('roleId')} />
             </div>
 
             <AppButton type="submit">Continuar</AppButton>
